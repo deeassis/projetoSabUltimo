@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- Declara o tipo de documento e a versão do HTML. -->
+<html lang="pt-BR">
+<!-- Inicia o documento HTML e define o idioma como português do Brasil. -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o viewport para garantir que a página seja exibida corretamente em dispositivos móveis. -->
+    <title>Login</title>
+    <!-- Define o título da página, que aparece na aba do navegador. -->
+    <link rel="stylesheet" href="login.css">
+    <!-- Link para o arquivo de estilos CSS que define a aparência da página. -->
+    <link rel="icon" href="./img/favicon.png" />
+    <!-- Define o ícone da página que aparece na aba do navegador (favicon). -->
+</head>
+<body>
+    <div class="login-container">
+        <!-- Container principal para o formulário de login. -->
+        <h1>Entrar</h1>
+        <!-- Título principal da página. -->
+        <form action="/login" method="post" id="login-form">
+            <!-- Formulário que será enviado para o servidor quando o botão "Entrar" for clicado. -->
+            <label for="username">Usuário:</label>
+            <!-- Rótulo para o campo de entrada de usuário. -->
+            <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
+            <!-- Campo de entrada para o nome de usuário. 'required' garante que o campo deve ser preenchido antes do envio. -->
+
+            <label for="password">Senha:</label>
+            <!-- Rótulo para o campo de entrada de senha. -->
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+            <!-- Campo de entrada para a senha. 'required' garante que o campo deve ser preenchido antes do envio. -->
+
+            <button type="submit">Entrar</button>
+            <!-- Botão que envia o formulário quando clicado. -->
+        </form>
+        <p id="error-message" class="error-message"></p>
+        <!-- Parágrafo para exibir mensagens de erro, se necessário. -->
+        <p>Não tem uma conta? <a href="../cadastro/register.html">Registrar</a></p>
+        <!-- Link para a página de registro de novos usuários. -->
+    </div>
+    <script src="login.js"></script>
+    <!-- Link para o arquivo de JavaScript que pode conter funcionalidades adicionais para a página. -->
+</body>
+</html> 
+
