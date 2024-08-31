@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- Declara o tipo de documento e a versão do HTML. -->
-<html lang="pt-BR">
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
 <!-- Inicia o documento HTML e define o idioma como português do Brasil. -->
 <head>
     <meta charset="UTF-8">
@@ -36,7 +36,7 @@
         </form>
         <p id="error-message" class="error-message"></p>
         <!-- Parágrafo para exibir mensagens de erro, se necessário. -->
-        <p>Não tem uma conta? <a href="../cadastro/register.html">Registrar</a></p>
+        <p>Não tem uma conta? <a href="/register">Registrar</a></p>
         <!-- Link para a página de registro de novos usuários. -->
     </div>
     <script src="login.js"></script>

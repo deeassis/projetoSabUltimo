@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+  margin: 0; /* Remove as margens padrão de todos os elementos */
+  padding: 0; /* Remove o padding padrão de todos os elementos para evitar espaços extras */
+  box-sizing: border-box; /* Inclui padding e borda na largura e altura dos elementos */
+}
+
+/* Estilos para html e body */
+html, body {
+  height: 100%; /* Garante que o body ocupe a altura completa da viewport */
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, Roboto,
+    "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol"; /* Fonte moderna e legível */
+  background: url('img/background.jpg') center center / cover no-repeat; /* Imagem de fundo */
+}
+
+/* Estilos para o header */
+header {
+  background-color: rgb(255, 255, 255); /* Cor de fundo branca */
+  text-align: center; /* Centraliza o texto */
+  padding: 1rem; /* Espaçamento interno */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilos para o nav */
+#nav {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro e translúcido */
+  backdrop-filter: saturate(180%) blur(20px); /* Efeito de desfoque */
+  padding: 1rem; /* Espaçamento interno */
+}
+
+#nav ul {
+  display: flex; /* Layout flexível */
+  justify-content: space-around; /* Distribui os itens uniformemente */
+  list-style: none; /* Remove marcadores */
+}
+
+#nav ul li a {
+  text-decoration: none; /* Remove sublinhado dos links */
+  color: rgba(255, 255, 255, 0.8); /* Cor do texto */
+  font-size: 16px; /* Tamanho da fonte */
+  display: flex; /* Alinha o ícone e o texto horizontalmente */
+  align-items: center; /* Alinha verticalmente */
+}
+
+#nav ul li a i {
+  margin-right: 8px; /* Espaço entre o ícone e o texto */
+}
+
+#nav ul li a:hover {
+  color: #ffffff; /* Muda a cor ao passar o mouse */
+}
+
+/* Estilos para o carousel */
+.carousel {
+  position: relative; /* Necessário para os botões de navegação */
+  overflow: hidden; /* Esconde imagens fora do container */
+  margin-bottom: 20px;
+}
+
+.slides {
+  display: flex; /* Layout flexível para slides */
+  transition: transform 0.5s ease-in-out; /* Transição suave */
+}
+
+.carousel-image {
+  height: 300px; /* Altura das imagens do carousel */
+  min-width: 100%; /* Cada slide ocupa toda a largura do carousel */
+  box-sizing: border-box; /* Inclui padding e borda na largura e altura */
+}
+
+.carousel-image img {
+  width: 100%; /* Imagem ocupa toda a largura do slide */
+  height: 100%; /* Imagem ocupa toda a altura do slide */
+  object-fit: cover; /* Cobre o espaço do slide sem distorção */
+}
+
+button {
+  position: absolute; /* Posiciona os botões de navegação no carousel */
+  top: 50%; /* Alinha verticalmente ao centro */
+  background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  color: white; /* Cor do texto */
+  border: none; /* Remove a borda padrão */
+  padding: 10px; /* Espaçamento interno */
+  cursor: pointer; /* Mostra o cursor de mão ao passar sobre o botão */
+  transform: translateY(-50%); /* Ajusta a posição vertical */
+}
+
+.prev {
+  left: 10px; /* Alinha o botão "anterior" à esquerda */
+}
+
+.next {
+  right: 10px; /* Alinha o botão "próximo" à direita */
+}
+
+/* Estilos para a seção de produtos */
+.produtos {
+  width: 100%;
+  display: flex; /* Layout flexível */
+  flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+  justify-content: space-around; /* Distribui os itens uniformemente */
+  gap: 10px; /* Espaço entre os produtos */
+}
+
+.produtos .produto {
+  width: calc(33.333% - 10px); /* Ajusta a largura para considerar o espaçamento */
+  display: flex; /* Layout flexível dentro de cada produto */
+  flex-direction: column; /* Alinha itens na vertical */
+  align-items: center; /* Alinha itens ao centro */
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 10px; /* Espaçamento inferior entre linhas de produtos */
+}
+
+.produtos .produto img {
+  width: 100px; /* Largura das imagens dos produtos */
+}
+
+/* Estilos para o footer */
+footer {
+  background-color: #ffffff; /* Cor de fundo branca */
+  color: #555555; /* Cor do texto cinza escuro */
+  text-align: center; /* Alinha o texto ao centro */
+  padding: 15px; /* Espaçamento interno */
+  border-top: 1px solid #dddddd; /* Linha superior sutil */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte limpa e moderna */
+}
+
+footer p {
+  margin: 0; /* Remove a margem padrão do parágrafo */
+  font-size: 14px; /* Tamanho da fonte moderado */
+}
+
